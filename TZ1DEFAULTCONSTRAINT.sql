@@ -1,0 +1,11 @@
+use xyz;
+create table youemp(id int primary key,name VARCHAR(20),age int not null,
+city VARCHAR(20) DEFAULT "INDORE");
+/*SYNTAX WHEN YOU WANNA TYPE ANY VALUE INSTEAD OF DEFAULT IN CITY*/
+/*SYNTAX 1*/
+INSERT INTO youemp(id,name,age,city) VALUES(103,"SHRUTI",22,"boston");
+/*SYNTAX 2*/
+INSERT INTO youemp VALUES(108,"SHRUTI",22,"NEW YORK");
+/*SYNTAX WHEN YOU DO NOT WANNA TYPE ANY VALUE IN CITY AND SET IT TO DEFAULT */
+INSERT INTO youemp(id,name,age) VALUES(104,"ADAMS",22);
+SELECT*FROM(youemp); 
